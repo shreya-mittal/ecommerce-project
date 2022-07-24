@@ -1,0 +1,74 @@
+
+<div class="page-wrapper">
+
+  <!-- MENU SIDEBAR-->
+  <aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+      <a routerLink="/products">
+        <img src="assets/images/logo.png" alt="One Stop Sports Store" class="img-responsive" style="padding-left: 30px;
+        height: 60px">
+      </a>
+    </div>
+
+    <app-product-category-menu></app-product-category-menu>
+    
+    
+  </aside>
+  <!-- END MENU SIDEBAR-->
+
+  <!-- PAGE CONTAINER-->
+  <div class="page-container">
+  <!--Navigation-->
+  
+
+    <!-- HEADER DESKTOP-->
+    <header class="header-desktop">
+      <div class="section-content section-content-p30">
+        <div class="container-fluid">
+          <div class="header-wrap">
+
+            <app-search></app-search>
+            
+            <a routerLink="/login" class="btn btn-info" >Login</a>
+
+            <a routerLink="/order-history" class="btn btn-info" >Orders</a>
+            
+            <a routerLink="/logout" class="btn btn-info">Logout</a>
+
+            <app-cart-status></app-cart-status>
+
+            
+           
+          </div>
+          <div class="account-wrap"></div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER DESKTOP-->
+
+    <div class="bg-dark py-5">
+      <div class="container px-4 px-lg-5 my-5">
+          <div class="text-center text-white">
+              <h1 class="display-4 fw-bolder " style="font-weight: 800; color: white;">One Stop Sports Store</h1>
+              <p class="lead fw-normal text-white-50 mb-0">Every product delivered</p>
+          </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT-->
+    <router-outlet></router-outlet>
+
+
+  </div>
+</div>
+
+<!-- END PAGE CONTAINER-->
+
+
+<footer>
+  <ul>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Help</a></li>
+  </ul>
+</footer>
